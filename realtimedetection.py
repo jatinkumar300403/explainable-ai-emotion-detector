@@ -11,7 +11,7 @@ st.title("😃 Real-Time Emotion Detector with Grad-CAM — Smooth Mode")
 st.write("Detects emotions from webcam feed, shows **probabilities**, and overlays **Grad-CAM**.")
 
 # ----------------- Sidebar controls -----------------
-MODE            = st.sidebar.radio("Camera Mode", ["Local Webcam", "Browser Camera"])
+MODE = st.sidebar.radio("Camera Mode", ["Local Webcam", "Browser Camera"], index=1)
 TARGET_FPS      = st.sidebar.slider("Target FPS (local webcam only)", 5, 30, 20, 1)
 GRADCAM_EVERY   = st.sidebar.slider("Compute Grad-CAM every N frames", 1, 10, 5, 1)
 CHART_EVERY     = st.sidebar.slider("Update chart every N frames", 1, 20, 10, 1)
